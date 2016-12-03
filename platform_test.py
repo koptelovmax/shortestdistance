@@ -30,10 +30,10 @@ for line in f:
         print "Invalid input:", line
 f.close()
 n = G.number_of_nodes()
-#%%
+
 # Load the Graph Coordinate System:
 GCS = np.zeros((n,dimensions))
-f = open('GCS-files\\MyResults-'+network_name+'.txt', 'r')
+f = open('Orion-res-files\\MyResults-'+network_name+'.txt', 'r')
 for line in f:
     try:
         data = line.split(' ')
