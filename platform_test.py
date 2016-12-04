@@ -13,9 +13,8 @@ def orion_distance(CoordArr,A,B,d):
 start = timeit.default_timer() # Initialize the timer to compute the time
 
 # Input parameters:
-network_name = 'last-fm-giant'
-dimensions = 10
-num_test = 100
+network_name = 'co-dblp'
+dimensions = 7
 
 # Load the Graph:
 G = nx.Graph()
@@ -29,7 +28,7 @@ for line in f:
     except ValueError:
         print "Invalid input:", line
 f.close()
-n = G.number_of_nodes()
+n = G.nodes()[G.number_of_nodes()-1]+1
 
 # Load the Graph Coordinate System:
 GCS = np.zeros((n,dimensions))

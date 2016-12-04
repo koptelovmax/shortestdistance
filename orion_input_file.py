@@ -6,7 +6,7 @@ import timeit
 start = timeit.default_timer() # Initialize the timer to compute the time
 
 # Input parameters:
-network_name = 'roadNet-PA'
+network_name = 'co-dblp'
 num_landmarks = 30
 
 # Load the dataset:
